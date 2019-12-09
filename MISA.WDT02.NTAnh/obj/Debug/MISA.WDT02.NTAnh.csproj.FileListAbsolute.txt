@@ -1,0 +1,4 @@
+F:\Web\MISA_2019\MISA.WDT02.NTAnh\MISA.WDT02.NTAnh\obj\Debug\MISA.WDT02.NTAnh.csprojAssemblyReference.cache
+F:\Web\MISA_2019\MISA.WDT02.NTAnh\MISA.WDT02.NTAnh\obj\Debug\MISA.WDT02.NTAnh.Properties.Resources.resources
+F:\Web\MISA_2019\MISA.WDT02.NTAnh\MISA.WDT02.NTAnh\obj\Debug\MISA.WDT02.NTAnh.csproj.GenerateResource.cache
+F:\Web\MISA_2019\MISA.WDT02.NTAnh\MISA.WDT02.NTAnh\obj\Debug\MISA.WDT02.NTAnh.csproj.CoreCompileInputs.cache

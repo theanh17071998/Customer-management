@@ -1,0 +1,151 @@
+﻿/*
+    Dàn giao diện cho menu 
+    Người tạo: Nguyễn Thế Anh 1/8/2019
+
+*/
+
+.menu .logo {
+    height: 52px;
+    background-image: url(/Content/Images/logo-mshopkeeper.png);
+    background-repeat: no-repeat;
+    background-position-y: 13px;
+    background-position-x: 10px;
+    background-color: #045070;
+    margin-bottom: 5px;
+}
+
+.menu .menu-items {
+    position: absolute;
+    left: -6px;
+    height: calc(100% - 52px - 40px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.menu .menu-item-wrap {
+    width: 100%;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding-left: 19px;
+}
+
+    .menu .menu-item-wrap:hover {
+        width: 100%;
+        height: 40px;
+        background-color: #02415c;
+    }
+/**
+    Icon trong menu
+*/
+.menu .menu-item-icons {
+    background-image: url(/Content/Images/slibarmenu.png);
+    width: 20px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: -3px 3px;
+}
+
+    .menu .menu-item-icons.icon2 {
+        background-position: -3px -276px;
+    }
+
+    .menu .menu-item-icons.icon3 {
+        background-position: -3px -198px;
+    }
+
+    .menu .menu-item-icons.icon4 {
+        background-image: url(/Content/Images/sms_menu.svg);
+        background-position-x: 2px;
+    }
+
+    .menu .menu-item-icons.icon5 {
+        background-position: -3px -238px;
+    }
+
+    .menu .menu-item-icons.icon6 {
+        background-position: -3px -276px;
+    }
+
+    .menu .menu-item-icons.icon7 {
+        background-position: -3px -317px;
+    }
+
+    .menu .menu-item-icons.icon8 {
+        background-position: -3px -387px;
+    }
+
+    .menu .menu-item-icons.icon9 {
+        background-position: -3px -422px;
+    }
+
+    .menu .menu-item-icons.icon10 {
+        background-image: url(/Content/Images/ic_ocm_logo.png);
+        background-position-x: 1px;
+    }
+
+    .menu .menu-item-icons.icon11 {
+        background-image: url(/Content/Images/icon_5shop_white_24_1.png);
+        background-position-y: -1px;
+    }
+
+    .menu .menu-item-icons.icon12 {
+        background-image: url(/Content/Images/ic_api_20.svg);
+        background-position-x: 1px;
+        background-position-y: 5px;
+        width: 26px;
+    }
+
+    .menu .menu-item-icons.icon13 {
+        background-image: url(/Content/Images/ic_sogiaohang.png);
+        background-position-x: 1px;
+    }
+
+    .menu .menu-item-icons.icon14 {
+        background-position: -3px -39px;
+    }
+
+    .menu .menu-item-icons.icon15 {
+        background-position: -2px -80px;
+    }
+
+    .menu .menu-item-icons.icon16 {
+        background-position: -3px -119px;
+    }
+
+    .menu .menu-item-icons.icon17 {
+        background-position: -3px -158px;
+    }
+
+.menu .menu-item-goods {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    height: calc(100% - 748px - 52px);
+    min-height: 40px;
+    display: inline-flex;
+    padding-left: 10px;
+}
+
+
+    .menu .menu-item-goods:hover {
+        background-color: #02415c;
+    }
+
+.menu .menu-item-icons.icon-goods {
+    background-position: 0px -348px;
+    width: 120px;
+    height: 30px;
+}
+
+/*
+  Component menu-item-text  trong menu
+*/
+.menu .menu-item-text {
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 40px;
+    width: 500px;
+}

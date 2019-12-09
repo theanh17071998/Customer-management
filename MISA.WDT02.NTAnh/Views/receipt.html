@@ -1,0 +1,989 @@
+﻿<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/5279a6eae4.js"></script>
+
+    <link rel="stylesheet" href="/CSS/Style.css">
+
+    <link href="/CSS/ContentCustomer.css" rel="stylesheet" />
+    <link href="/CSS/HeaderCustomer.css" rel="stylesheet" />
+    <link href="/CSS/MenuCustomer.css" rel="stylesheet" />
+    <link href="/CSS/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+    <link href="/CSS/Dialog.css" rel="stylesheet" />
+   
+    <title>
+        Customer
+    </title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h4>Khách Hàng</h4>
+        </div>
+        <div class="header-right">
+            <div class="dropdown">
+                <select>
+                    <option>Chuỗi cửa hàng</option>
+                    <option>Kho tổng</option>
+                    <option>misacard</option>
+                </select>
+            </div>
+            <div class="admin">
+                <div class="ava"></div>
+                <div class="text">
+                    <div class="dropdown-admin">
+                        <button class="dropbtn">admin</button>
+                        <div class="dropdown-content">
+                            <a href="#"> <span class="fas fa-key"></span> Thay đổi mật khẩu</a>
+                            <a href="#"><span class="far fa-clipboard"></span>Góp ý với nhà phát triển</a>
+                            <a href="#"><span class="fas fa-sign-out-alt"></span>Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone"></div>
+            <div class="noti"></div>
+            <div class="help"></div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="logo"></div>
+        <div class="menu-items">
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons"></div>
+                <div class="menu-item-text">Tổng quan</div>
+            </div>
+
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon2"></div>
+                <div class="menu-item-text">Báo cáo</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon13"></div>
+                <div class="menu-item-text">Sổ giao hàng</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon14"></div>
+                <div class="menu-item-text">Mua hàng</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon15"></div>
+                <div class="menu-item-text">Kho</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon16"></div>
+                <div class="menu-item-text">Qũy tiền</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon17"></div>
+                <div class="menu-item-text">Chi phí</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon3"></div>
+                <div class="menu-item-text">Khuyến mãi</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon4"></div>
+                <div class="menu-item-text">SMS marketing</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon5"></div>
+                <div class="menu-item-text">Danh mục</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon6"></div>
+                <div class="menu-item-text">Hóa đơn điện tử</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon7"></div>
+                <div class="menu-item-text">
+                    Thiết lập
+                </div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon8"></div>
+                <div class="menu-item-text">Trợ giúp</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon9"></div>
+                <div class="menu-item-text">Thuê bao</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon10"></div>
+                <div class="menu-item-text">OSM </div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon11"></div>
+                <div class="menu-item-text">5Shop</div>
+            </div>
+            <div class="menu-item-wrap">
+                <div class="menu-item-icons icon12"></div>
+                <div class="menu-item-text">API</div>
+            </div>
+
+        </div>
+        <div class="menu-item-goods">
+            <div class="menu-item-icons icon-goods"></div>
+            <div class="menu-item-text">Hàng hóa</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="grid-master">
+            <div class="toolbar">
+                <button id="add" class="toolbar-item add-new" title="Ctrl+1">
+                    <div class="icon add-new">
+                    </div>
+                    <span>Thêm mới</span>
+                    <div class="arrow-down-white">
+                    </div>
+                </button>
+                <div class="sperator"></div>
+                <button class="toolbar-item duplicate" disabled>
+                    <div class="icon duplicate">
+                    </div>
+                    <span>Nhân bản</span>
+                </button>
+               
+                <div class="sperator"></div>
+                <button class="toolbar-item edit" title="Ctrl+E" disabled>
+                    <div class="icon edit">
+                    </div>
+                    <span>Sửa</span>
+                </button>
+                <div class="sperator"></div>
+                <button class="toolbar-item delete" title="Ctrl+D" disabled>
+                    <div class="icon delete">
+                    </div>
+                    <span>Xóa</span>
+                </button>
+                <div class="sperator"></div>
+                <button class="toolbar-item reload">
+                    <div class="icon reload">
+                    </div>
+                    <span>Nạp</span>
+                </button>
+                <div class="sperator"></div>
+                <button class="toolbar-item import">
+                    <div class="icon import">
+                    </div>
+                    <span>Nhập khẩu</span>
+                </button>
+                <div class="sperator"></div>
+                <button class="toolbar-item export">
+                    <div class="icon export">
+                    </div>
+                    <span>Xuất khẩu</span>
+                </button>
+            </div>
+
+            <div class="table-content">
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th class="uncheck-all" check-all="no" id="check-all" fieldName=""></th>
+                            <th fieldName="CustomerID">
+                                <div class="component-info">
+                                    <div class="text">Mã Khách Hàng</div>
+                                    <div class="split-textbox">
+                                        <div class="split"><span>*</span></div>
+                                        <div class="textbox"></div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th fieldName="CustomerName">
+                                <div class="component-info">
+                                    <div class="text">Tên khách hàng</div>
+                                    <div class="split-textbox">
+                                        <div class="split"><span>*</span></div>
+                                        <div class="textbox"></div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th fieldName="PhoneNumber">
+                                <div class="component-info">
+                                    <div class="text">Điện thoại</div>
+                                    <div class="split-textbox">
+                                        <div class="split"><span>*</span></div>
+                                        <div class="textbox"></div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th fieldName="RefBirthday">
+                                <div class="component-info">
+                                    <div class="text">Ngày sinh</div>
+                                    <div class="split-textbox">
+                                        <div class="split"><span>=</span></div>
+                                        <div class="textbox"></div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th fieldName="GroupCustomers">
+                                <div class="component-info">
+                                    <div class="text">Nhóm khách hàng</div>
+                                    <div class="split-textbox">
+                                        <div class="split"><span>*</span></div>
+                                        <div class="textbox"></div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th fieldName="Notes">
+                                <div class="component-info">
+                                    <div class="text">Ghi chú</div>
+                                    <div class="split-textbox">
+                                        <div class="split"><span>*</span></div>
+                                        <div class="textbox"></div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th fieldName="Status">
+                                <div class="component-info">
+                                    <div class="text">Trạng thái</div>
+                                    <div class="split-textbox">
+
+                                        <div class="textbox"></div>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            
+            <div class="all-dialog">
+                <div id="dialog" style="display:none" title="Thêm mới khách hàng">
+
+                    <div class="customer">
+                        <div class="customer-title">Thông tin cơ bản</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Mã khách hàng
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input class="noti-border" property="CustomerID" />
+                                </div>
+                                <div class="noti" style="display:none"></div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Tên khách hàng
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input class="noti-border" property="CustomerName" />
+                                </div>
+                            </div>
+                            <div class="noti" style="display:none" ></div>
+                        </div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Nhóm khách hàng
+                                </div>
+                                <div class="small-input-search">
+                                    <div class="search-input">
+                                        <input placeholder="Nhập để tìm kiếm" property="GroupCustomers" />
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <button class="search-cus"></button>
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Điện thoại
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input class="noti-border" property="PhoneNumber" />
+                                </div>
+                                <div class="noti" style="display:none" ></div>
+                            </div>
+                        </div>
+                        <div class="customer-address">
+                            <div class="address-text">Địa chỉ</div>
+                            <div class="address-input">
+                                <div class="input-up">
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Tỉnh thành" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Quận/Huyện" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Phường/Xã" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                </div>
+                                <div class="input-down">
+                                    <input placeholder="Số nhà, đường phố" property="CusAddress" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Email
+                                </div>
+                                <div class="small-input">
+                                    <input property="CusEmail" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Ngày sinh
+                                </div>
+                                <div class="small-input-birth">
+                                    <input id="datepicker-add-customer" placeholder="DD /MM /YYYY" property="refbirthday" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-note">
+                            <div class="address-text">Ghi chú</div>
+                            <div class="note-input">
+                                <textarea property="Notes"></textarea>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="customer-title">Thẻ thành viên</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Mã thẻ thành viên
+                                </div>
+                                <div class="small-input">
+                                    <input property="CusNoMember" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Hạng thẻ
+                                </div>
+                                <div class="small-input">
+                                    <input property="RankCard" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-number">
+                            <div class="number-text">Số CMND/Hộ chiếu</div>
+                            <div class="number-input">
+                                <input property="CusCMND" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="customer-title">Thông tin công ty</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Tên công ty
+                                </div>
+                                <div class="small-input">
+                                    <input property="NameCompany" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Mã số thuế
+                                </div>
+                                <div class="small-input">
+                                    <input property="FaxNumber" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-dialog">
+                        <a href="http://help.mshopkeeper.vn/170106_khai_bao_khach_hang.htm" class="bottom-left" target="_blank">
+                            <div class="bottom-left-icon"></div>
+                            <div class="bottom-left-text">Trợ giúp</div>
+                        </a>
+                        <div class="bottom-right">
+                            <button class="right-save">
+                                <div class="right-save-icon"></div>
+                                <div class="right-save-text">Lưu</div>
+                            </button>
+                            <button class="right-saveadd">
+                                <div class="right-saveadd-icon"></div>
+                                <div class="right-saveadd-text">Lưu và thêm mới</div>
+                            </button>
+                            <button class="right-cancel">
+                                <div class="right-cancel-icon"></div>
+                                <div class="right-cancel-text">Huỷ bỏ</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dialog-edit" style="display:none" title="Sửa khách hàng">
+
+                    <div class="customer">
+                        <div class="customer-title">Thông tin cơ bản</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Mã khách hàng
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input property="CustomerID" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Tên khách hàng
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input property="CustomerName" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Nhóm khách hàng
+                                </div>
+                                <div class="small-input-search">
+                                    <div class="search-input">
+                                        <input placeholder="Nhập để tìm kiếm" property="GroupCustomers" />
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <button class="search-cus"></button>
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Điện thoại
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input property="PhoneNumber" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-address">
+                            <div class="address-text">Địa chỉ</div>
+                            <div class="address-input">
+                                <div class="input-up">
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Tỉnh thành" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Quận/Huyện" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Phường/Xã" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                </div>
+                                <div class="input-down">
+                                    <input placeholder="Số nhà, đường phố" property="CusAddress" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Email
+                                </div>
+                                <div class="small-input">
+                                    <input property="CusEmail" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Ngày sinh
+                                </div>
+                                <div class="small-input-birth">
+                                    <input id="datepicker-edit-customer" placeholder="DD /MM /YYYY" property="RefBirthday" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-note">
+                            <div class="address-text">Ghi chú</div>
+                            <div class="note-input">
+                                <textarea property="Notes"></textarea>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="customer-title">Thẻ thành viên</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Mã thẻ thành viên
+                                </div>
+                                <div class="small-input">
+                                    <input property="CusNoMember" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Hạng thẻ
+                                </div>
+                                <div class="small-input">
+                                    <input property="RankCard" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-number">
+                            <div class="number-text">Số CMND/Hộ chiếu</div>
+                            <div class="number-input">
+                                <input property="CusCMND" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="customer-title">Thông tin công ty</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Tên công ty
+                                </div>
+                                <div class="small-input">
+                                    <input property="NameCompany" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Mã số thuế
+                                </div>
+                                <div class="small-input">
+                                    <input property="FaxNumber" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-dialog">
+                        <a href="http://help.mshopkeeper.vn/170106_khai_bao_khach_hang.htm" class="bottom-left" target="_blank">
+                            <div class="bottom-left-icon"></div>
+                            <div class="bottom-left-text">Trợ giúp</div>
+                        </a>
+                        <div class="bottom-right">
+                            <button class="right-save">
+                                <div class="right-save-icon"></div>
+                                <div class="right-save-text">Lưu</div>
+                            </button>
+                            <button class="right-saveadd">
+                                <div class="right-saveadd-icon"></div>
+                                <div class="right-saveadd-text">Lưu và thêm mới</div>
+                            </button>
+                            <button class="right-cancel">
+                                <div class="right-cancel-icon"></div>
+                                <div class="right-cancel-text">Huỷ bỏ</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="dialog-duplicate" style="display:none" title="Thêm mới khách hàng">
+
+                    <div class="customer">
+                        <div class="customer-title">Thông tin cơ bản</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Mã khách hàng
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input property="CustomerID" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Tên khách hàng
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input property="CustomerName" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Nhóm khách hàng
+                                </div>
+                                <div class="small-input-search">
+                                    <div class="search-input">
+                                        <input placeholder="Nhập để tìm kiếm" property="GroupCustomers" />
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <button class="search-cus"></button>
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Điện thoại
+                                    <span>*</span>
+                                </div>
+                                <div class="small-input">
+                                    <input property="PhoneNumber" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-address">
+                            <div class="address-text">Địa chỉ</div>
+                            <div class="address-input">
+                                <div class="input-up">
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Tỉnh thành" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Quận/Huyện" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <div class="up-left">
+                                        <div class="address-up-text">
+                                            <input placeholder="Phường/Xã" />
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                </div>
+                                <div class="input-down">
+                                    <input placeholder="Số nhà, đường phố" property="CusAddress" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Email
+                                </div>
+                                <div class="small-input">
+                                    <input property="CusEmail" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Ngày sinh
+                                </div>
+                                <div class="small-input-birth">
+                                    <input id="datepicker-duplicate-customer" placeholder="DD /MM /YYYY" property="RefBirthday" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-note">
+                            <div class="address-text">Ghi chú</div>
+                            <div class="note-input">
+                                <textarea property="Notes"></textarea>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="customer-title">Thẻ thành viên</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Mã thẻ thành viên
+                                </div>
+                                <div class="small-input">
+                                    <input property="CusNoMember" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Hạng thẻ
+                                </div>
+                                <div class="small-input">
+                                    <input property="RankCard" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-number">
+                            <div class="number-text">Số CMND/Hộ chiếu</div>
+                            <div class="number-input">
+                                <input property="CusCMND" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="customer-title">Thông tin công ty</div>
+                        <div class="customer-contact-small">
+                            <div class="small-left">
+                                <div class="small-text">
+                                    Tên công ty
+                                </div>
+                                <div class="small-input">
+                                    <input property="NameCompany" />
+                                </div>
+                            </div>
+                            <div class="small-right">
+                                <div class="small-text">
+                                    Mã số thuế
+                                </div>
+                                <div class="small-input">
+                                    <input property="FaxNumber" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-dialog">
+                        <a href="http://help.mshopkeeper.vn/170106_khai_bao_khach_hang.htm" class="bottom-left" target="_blank">
+                            <div class="bottom-left-icon"></div>
+                            <div class="bottom-left-text">Trợ giúp</div>
+                        </a>
+                        <div class="bottom-right">
+                            <button class="right-save">
+                                <div class="right-save-icon"></div>
+                                <div class="right-save-text">Lưu</div>
+                            </button>
+                            <button class="right-saveadd">
+                                <div class="right-saveadd-icon"></div>
+                                <div class="right-saveadd-text">Lưu và thêm mới</div>
+                            </button>
+                            <button class="right-cancel">
+                                <div class="right-cancel-icon"></div>
+                                <div class="right-cancel-text">Huỷ bỏ</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+            <div id="dialog-Add-Group" style="display:none" title="Thêm mới nhóm khách hàng">
+                <div class="cover-dialog">
+                    <div class="info-group-new">
+                        <div class="info-group-component">
+                            <div class="text">Mã nhóm KH<span style="color:red">*</span></div>
+                            <div class="center"></div>
+                            <div class="input-text">
+                                <input type="text"  />
+                            </div>
+                        </div>
+                        <div class="info-group-component">
+                            <div class="text">Tên nhóm KH<span style="color:red">*</span></div>
+                            <div class="center"></div>
+                            <div class="input-text">
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="info-group-component">
+                            <div class="text">Thuộc nhóm</div>
+                            <div class="center"></div>
+                            <div class="input-text">
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="info-group-component">
+                            <div class="text">Diễn giải</div>
+                            <div class="center"></div>
+                            <div class="input-text">
+                                <input type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-dialog">
+                        <a href="http://help.mshopkeeper.vn/170106_khai_bao_khach_hang.htm" class="bottom-left" target="_blank">
+                            <div class="bottom-left-icon"></div>
+                            <div class="bottom-left-text">Trợ giúp</div>
+                        </a>
+                        <div class="bottom-right-add-group">
+                            <button class="right-save">
+                                <div class="right-save-icon"></div>
+                                <div class="right-save-text">Lưu</div>
+                            </button>
+                            <button class="right-cancel">
+                                <div class="right-cancel-icon"></div>
+                                <div class="right-cancel-text">Huỷ bỏ</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                <!--<div id="dialog-edit" title="Sửa phiếu thu">
+                    <div class="containt input-data">
+                        <div class="sub-content">
+                            <div class="input-title">
+                                <div class="title">
+                                    Ngày
+                                </div>
+                                <div class="input">
+                                    <input id="datepickers" property="refDate" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    Số phiếu thu
+                                </div>
+                                <div class="input">
+                                    <input property="refNo" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    Loại phiếu thu
+                                </div>
+                                <div class="input">
+                                    <input property="refType" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-content">
+                            <div class="input-title">
+                                <div class="title">
+                                    Tổng tiền
+                                </div>
+                                <div class="input">
+                                    <input value="0" style="text-align:end;" property="total" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    <span> Đối tượng nộp nhận</span>
+                                </div>
+                                <div class="input">
+                                    <input property="contactName" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    Lý do
+                                </div>
+                                <div class="input">
+                                    <input property="reason" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containt button-data">
+                        <button class="save">Save</button>
+                        <button class="cancel">Cancel</button>
+                    </div>
+                </div>-->
+
+                <!--<div id="dialog-view" title="Phiếu thu">
+                    <div class="containt input-data">
+                        <div class="sub-content">
+                            <div class="input-title">
+                                <div class="title">
+                                    Mã khách hàng
+                                </div>
+                                <div class="input">
+                                    <input property="CustomerID" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    Tên khách hàng
+                                </div>
+                                <div class="input">
+                                    <input property="CustomerName" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    Điện thoại
+                                </div>
+                                <div class="input">
+                                    <input property="PhoneNumber" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-content">
+                            <div class="input-title">
+                                <div class="title">
+                                    Ngày sinh
+                                </div>
+                                <div class="input">
+                                    <input property="RefBirthday" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    Nhóm khách hàng
+                                </div>
+                                <div class="input">
+                                    <input property="GroupCustomers" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    Ghi chú
+                                </div>
+                                <div class="input">
+                                    <input property="Notes" />
+                                </div>
+                            </div>
+                            <div class="input-title">
+                                <div class="title">
+                                    Trạng thái
+                                </div>
+                                <div class="input">
+                                    <input property="Status" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+    </div>
+ 
+       
+    <div class="paging-toolbar">
+
+        <div class="left">
+            <div class="item-toolbar-wrap" style="display:flex">
+                <button class="item-toolbar first-page" style="background-position: -649px -124px"></button>
+                <button class="item-toolbar prev-page" style="background-position: -700px -124px"></button>
+            </div>
+            <div class="item-toolbar">Trang</div>
+            <div class="item-toolbar rectangle">
+                <input type="text" value="1" size="1" style="text-align:center; padding: 4px 6px; color: #404040" />
+            </div>
+          
+            <div class="item-toolbar"><span>trên 1</span></div>
+            <div class="item-toolbar-wrap" style="display:flex">
+                <button class="item-toolbar next-page"></button>
+                <button class="item-toolbar end-page" style="background-position: -798px -124px"></button>
+                <button class="item-toolbar reload-page" style="background-position: -849px -124px"></button>
+                <select class="item-toolbar rectangle" size="1" style="color: #404040">
+                    <option>15</option>
+                    <option>25</option>
+                    <option selected>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+        </div>
+        <div class="center"></div>
+        <div class="right" >
+            <div> Hiển thị 1 - 6 trên 8 kết quả</div>
+        </div>
+
+    </div>
+        
+    
+
+
+    <script src="/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="/Scripts/jquery-1.12.4.js"></script>
+    <script src="/Scripts/jquery-ui.js"></script>
+    <script src="/Scripts/common.js"></script>
+    <script src="/Scripts/Base.js"></script>
+    <script src="/Scripts/receipt.js"></script>
+   
+
+</body>
+</html>

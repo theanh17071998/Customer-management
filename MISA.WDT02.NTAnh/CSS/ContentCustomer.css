@@ -1,0 +1,392 @@
+﻿/*
+    Dàn giao diện Content 
+    Người tạo: Nguyễn Thế Anh 01/08/2019
+*/
+
+
+
+.content .grid-master {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+
+.icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url(/Content/Images/common-icon.png) no-repeat -2px 0px;
+}
+
+    /*Icon thêm mới*/
+    .icon.add-new {
+        background-position: -1px -127px;
+    }
+
+    /*Icon nhân bản*/
+    .icon.duplicate {
+        background-position: -976px -127px;
+    }
+    /*Icon xem*/
+    .icon.view {
+        background-position: -1602px -127px;
+    }
+    /*Icon xóa hàng*/
+    .icon.delete-row {
+        background-position: -2px 0px;
+        margin-left: 8px;
+    }
+
+    /*Icon chỉnh sửa*/
+    .icon.edit {
+        background-position: -77px -203px;
+    }
+    /*Icon xóa*/
+    .icon.delete {
+        background-position: -1076px -127px;
+    }
+    /*Icon tải lại (nạp)*/
+    .icon.reload {
+        background-position: -876px -127px;
+    }
+
+    .icon.import {
+        background-position: -177px -127px;
+    }
+
+    .icon.export {
+        background-position: -127px -127px;
+    }
+
+/**
+        Chỉnh thanh kéo mặc định
+    */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #aaaaaa;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #dddddd;
+}
+
+/*1.TOOLBAR*/
+.toolbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 36px;
+    font-size: 13px;
+    background-color: #026b97;
+    display: flex;
+    min-width: 1126px;
+}
+
+    /*toolbar item*/
+    .toolbar .toolbar-item {
+        width: auto;
+        color: #fff;
+        line-height: 36px;
+        padding: 0 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background-color: #026b97;
+        border: none;
+        outline: 0;
+    }
+
+        .toolbar .toolbar-item:hover {
+            background-color: #0088c2;
+        }
+
+        .toolbar .toolbar-item:disabled {
+            cursor: default;
+            opacity: 0.5;
+        }
+
+        .toolbar .toolbar-item span {
+            padding-left: 8px;
+        }
+
+
+
+    /*toolbar sperator*/
+    .toolbar .sperator {
+        height: 32px;
+        margin-top: 2px;
+        border-style: solid;
+        border-width: 0 0 0 1px;
+        border-left-color: #1882ae;
+        border-right-color: #1882ae;
+    }
+/*table*/
+.table-content {
+    position: absolute;
+    bottom:45px;
+    width: 100%;
+    background-color: white;
+    top: 36px;
+    overflow: auto;
+  
+}
+
+    .table-content .main-table {
+        width: 100%;
+        border-collapse: collapse;
+          min-width:1126px;
+    }
+        /*table th*/
+        .table-content .main-table th {
+            border: 1px solid #000;
+            height: 66px;
+            background-color: #ffffff;
+            font-size: 14px;
+            border: 1px solid #c7c7c9;
+            position:sticky;
+            top:0;
+        }
+
+        .table-content .main-table .component-info {
+            height: 66px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .table-content .main-table .component-info .text {
+                width: 100%;
+                height: 33px;
+                font-size: 13px;
+                font-weight: 800;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+        .table-content .main-table .split-textbox {
+            display: flex;
+            height: 33px;
+            width: 100%;
+            margin-right: 4px;
+        }
+
+        .table-content .main-table .split {
+            height: 33px;
+            width: 33px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            border: 1px solid #c7c7c9;
+        }
+
+            .table-content .main-table .split span {
+                margin-top: 10px;
+                font-size: 13px;
+            }
+
+        .table-content .main-table .textbox {
+            height: 33px;
+            background-color: white;
+            flex-grow: 1;
+            border-radius: 0;
+            margin-left: 2px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 2px;
+            border: 1px solid #c7c7c9;
+            width: 50px;
+        }
+
+            .table-content .main-table .textbox input {
+                border: none
+            }
+
+
+
+.main-table tbody tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.table-content .main-table .textbox i {
+    margin-right: 5px;
+}
+
+.table-content .main-table td {
+    border: 1px solid rgb(228, 226, 226);
+    height: 30px;
+    font-size: 13px;
+}
+
+
+
+
+/**Chinhr sủa giao diện input*/
+/*.input-data .sub-content {
+    margin-top: 10px;
+    width: 50%;
+}
+
+    .input-data .sub-content .input-title {
+        display: flex;
+        margin-bottom: 8px;
+        height: 40px;
+        text-align: center;
+    }
+
+        .input-data .sub-content .input-title .title {
+            font-size: 13px;
+            width: 35%;
+            margin-top: 6px;
+        }
+
+    .input-data .sub-content .input {
+        height: 32px;
+        width: 65%;
+    }
+
+        .input-data .sub-content .input input {
+            height: 32px;
+            width: 70%;
+            border-radius: 3px;
+            border: 1px solid #000;
+            padding: 0 8px;
+        }*/
+
+/*chỉnh sủa button-data*/
+
+/*.button-data button {
+    height: 32px;
+    width: 70px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+    .button-data button.save {
+        background-color: #026b97;
+        color: #fff;
+    }
+
+    .button-data button.cancel {
+        background-color: #026b97;
+        color: #fff;
+    }*/
+
+/*
+     Chỉnh sửa giao diện dialog sửa
+ */
+/*#dialog-edit .containt {
+    width: 100%;
+}
+
+    #dialog-edit .containt.input-data {
+        display: flex;
+        height: 80%;
+        background-color: white;
+    }
+
+    #dialog-edit .containt.button-data {
+        height: 20%;
+        background-color: white;
+        display: flex;
+        justify-content: flex-end;
+    }*/
+
+/*
+     Chỉnh sửa giao diện dialog view
+ */
+/*#dialog-view .containt {
+    width: 100%;
+    margin-top: 30px;
+}
+
+    #dialog-view .containt.input-data {
+        display: flex;
+        height: 80%;
+        background-color: white;
+    }
+
+.detail-container .main-table-detail {
+    width: 100%;
+}
+
+.detail-container th {
+    border: 1px solid #000;
+}
+
+.detail-container td {
+    border: 1px solid #000;
+}*/
+
+.all-dialog {
+    display: none;
+}
+
+
+/**
+    Paging toolbar
+*/
+.paging-toolbar {
+    position: absolute;
+    left: 152px;
+    right: 10px;
+    bottom: 10px;
+    padding: 6px;
+    color: #4b4c4c;
+    height: 31px;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    font-size: 13px;
+    min-width:800px;
+}
+
+    .paging-toolbar .left {
+       
+        align-items: center;
+        display: flex;
+        flex-grow:1;
+        padding-right: 10px;
+      justify-content:space-between;
+        
+    }
+    .paging-toolbar .center {
+        flex-grow:8;
+    }
+    .paging-toolbar .right {
+     
+        align-items: center;
+        display: flex;
+        padding-right: 10px;
+        flex-grow:0;
+    }
+
+   .paging-toolbar .left button {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #247ba0;
+        background-color: white;
+        border-radius: 3px;
+        margin: 1px;
+        background: url(/Content/Images/common-icon.png) no-repeat -749px -124px;
+    }
+
+     .paging-toolbar .left .rectangle {
+        border: 1px solid rgb(209, 209, 209);
+        background-color: white;
+        border-radius: 3px;
+    }
+     .paging-toolbar .item-toolabr .span {
+         width:30px;
+     }

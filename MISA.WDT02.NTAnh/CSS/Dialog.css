@@ -1,0 +1,528 @@
+﻿/**
+    Dàn giao diện dialog add
+    Người tạo: Nguyễn Thế Anh
+    Ngày tạo: 02/08/2019
+*/
+.customer {
+    width:770px;
+    height: calc(100% - 40px - 30px);
+    overflow-x: auto;
+    padding: 12px 3px 0px;
+}
+
+    .customer .customer-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: #757575;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+    }
+
+    .customer .customer-contact-small {
+        height: 35px;
+        margin: 10px 0;
+        display: flex;
+    }
+
+.customer-contact-small .small-left {
+    width: 50%;
+    display: flex;
+}
+
+.small-text {
+    width: 133px;
+   padding-top:8px;
+    font-size: 13px;
+    color: #212121;
+    font-weight: 300;
+}
+
+    .small-text span {
+        color: red;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+.small-input {
+    width: calc(100% - 133px);
+   
+}
+
+    .small-input input {
+        height: 23px;
+        border: 1px solid #d0d0d0;
+        padding: 5px 8px;
+        border-radius: 3px;
+        color: #404040;
+        font-weight: 300;
+        font-size: 13px;
+        height: 35px;
+        width:215px;
+    }
+
+.small-input-search {
+    width: calc(100% - 133px);
+    display: flex;
+}
+
+.search-input {
+    width: calc(100% - 38px);
+    display: flex;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+.small-input-search input {
+    width: 200px;
+    height: 32px;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: #404040;
+    font-weight: 300;
+    font-size: 13px;
+    border: none;
+}
+
+.search-cus {
+    width: 24px;
+    height: 35px;
+    background-image: url('/Content/Images/add.png');
+    background-position: center;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.customer-contact-small .small-right {
+    width: 50%;
+    display: flex;
+}
+
+.customer .customer-address {
+    height: 70px;
+    margin: 10px 0;
+    display: flex;
+}
+
+.address-text {
+    width: 133px;
+    padding-top: 8px;
+    font-size: 13px;
+    color: #212121;
+    font-weight: 300;
+}
+
+.customer-address .address-input {
+    width: 625px;
+}
+
+.address-input .input-up {
+    height: 35px;
+    width:620px;
+    display: flex;
+}
+
+.up-left {
+    width: 196px;
+    display: flex;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px 0 0 3px;
+    margin-bottom: 1px;
+}
+
+.address-up-text {
+    width: 170px;
+}
+
+    .address-up-text input {
+        width: 170px;
+        height: 32px;
+        padding: 5px 8px;
+        color: #404040;
+        font-weight: 300;
+        font-size: 13px;
+        border: none;
+    }
+
+.arrow-down {
+    width: 24px;
+    height: 34px;
+    background-image: url('/Content/Images/arrow-down-line.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.address-input .input-down {
+    height: 35px;
+}
+
+.input-down input {
+    width: 595px;
+    height: 35px;
+    border: 1px solid #d0d0d0;
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: #404040;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.customer .customer-note {
+    height: 70px;
+    margin: 10px 0;
+    display: flex;
+}
+
+.customer-note .note-input {
+    width: calc(100% - 133px);
+}
+
+.note-input textarea {
+    width: 596px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    color: #404040;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.customer .customer-number {
+    height: 35px;
+    margin: 10px 0;
+    display: flex;
+}
+
+.customer-number .number-text {
+    width: 133px;
+    padding-top: 8px;
+    font-size: 13px;
+    color: #212121;
+    font-weight: 300;
+}
+
+.customer-number number-input {
+    width: calc(100% - 133px)
+}
+
+.number-input input {
+    width: 596px;
+    height: 35px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    color: #404040;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.small-input-birth {
+    width: 213px;
+    display: flex;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+    .small-input-birth input {
+        width:203px;
+        height: 33px;
+        padding: 5px 8px;
+        color: #404040;
+        font-weight: 300;
+        font-size: 13px;
+        border: none;
+     
+    
+    }
+    .small-input-birth .ui-datepicker-trigger {
+        width: 20px;
+        height: 20px;
+        padding-top: 5px;
+        margin-right: 9px;
+    }
+    
+    .small-input-birth .birth-datepick {
+        width: 23px;
+        
+        background-image: url('/Content/Images/common-icon.png');
+        background-position: 0 -170px;
+        background-repeat: no-repeat;
+    }
+
+.bottom-dialog {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+    .bottom-dialog .bottom-left {
+        position: absolute;
+        left: 0;
+        width: 80px;
+        height: 35px;
+        top: 0;
+        margin: 12px 8px;
+        display: flex;
+        text-decoration: none;
+    }
+
+.bottom-left .bottom-left-icon {
+    margin-top: 6px;
+    margin-left:6px;
+    width: 20px;
+    height: 20px;
+    background-image: url('/Content/Images/icon_help_18.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bottom-left .bottom-left-text {
+    
+    line-height: 35px;
+    font-size: 13px;
+    color: #247ba0;
+    font-weight: 600;
+}
+
+.bottom-dialog .bottom-left:hover {
+    background-color: #e5e6eb;
+}
+
+.bottom-dialog .bottom-right {
+    position: absolute;
+    right: 0;
+    width: 294px;
+    height: 35px;
+    margin: 12px 8px;
+    display: flex;
+}
+
+.bottom-right .right-save {
+    position: absolute;
+    left: 0;
+    width: 65px;
+    height: 35px;
+    background-color: #026b97;
+    border: none;
+    display: flex;
+}
+
+.right-save .right-save-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Images/common-icon.png');
+    background-position: -327px -127px;
+    background-repeat: no-repeat;
+}
+
+.right-save .right-save-text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0 5px;
+}
+
+.bottom-right .right-save:hover {
+    cursor: pointer;
+    background-color: #0088c2;
+}
+
+.bottom-right .right-saveadd {
+    position: absolute;
+    left: 75px;
+    width: 138px;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #026b97;
+    display: flex;
+    cursor: pointer;
+}
+
+.right-saveadd .right-saveadd-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Images/common-icon.png');
+    background-position: -26px -127px;
+    background-repeat: no-repeat;
+}
+
+.right-saveadd .right-saveadd-text {
+    color: #026b97;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.bottom-right .right-saveadd:hover {
+    color: #0088c2;
+}
+
+.bottom-right .right-cancel {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.right-cancel .right-cancel-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Images/common-icon.png');
+    background-position: -252px -127px;
+    background-repeat: no-repeat;
+}
+
+.right-cancel .right-cancel-text {
+    color: #026b97;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 3px;
+}
+
+.bottom-right .right-cancel:hover {
+    color: #0088c2;
+    border: 1px solid #0088c2;
+}
+
+
+
+/**
+    Dàn dialog thêm mới nhóm khách hàng
+    Nguyễn Thế Anh 02/08/2019
+*/
+.cover-dialog {
+    font-size: 13px;
+    width: 463px;
+    height: 294px;
+}
+.info-group-new{
+    margin-left:6px;
+    margin-top:20px;
+}
+.info-group-component {
+    display: flex;
+    margin-bottom: 15px;
+}
+ .info-group-component .text {
+     width:133px;
+     margin-top:5px;
+ }
+    .info-group-component .text span {
+       margin-left:2px;
+    }
+ .info-group-component .input-text {
+     width:calc(100% - 133px);
+     height:30px;
+ }
+    .info-group-component .input-text input {
+        height: 30px;
+        width: 250px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid #d1d6d6;
+        border-radius: 3px;
+    }
+    
+    
+
+.bottom-dialog {
+    border-top: 1px solid #f0f0f0;
+}
+
+.bottom-dialog .bottom-right-add-group {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 35px;
+    margin-top: 12px;
+    margin-right:4px;
+    display: flex;
+}
+
+.bottom-right-add-group .right-save {
+    position: absolute;
+    left: 0;
+    width: 65px;
+    height: 35px;
+    background-color: #026b97;
+    border: none;
+    display: flex;
+}
+
+.right-save .right-save-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Images/common-icon.png');
+    background-position: -327px -127px;
+    background-repeat: no-repeat;
+}
+
+.right-save .right-save-text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0 5px;
+}
+
+.bottom-right-add-group .right-save:hover {
+    cursor: pointer;
+    background-color: #0088c2;
+}
+
+
+.bottom-right-add-group .right-cancel {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.right-cancel .right-cancel-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Images/common-icon.png');
+    background-position: -252px -127px;
+    background-repeat: no-repeat;
+}
+
+.right-cancel .right-cancel-text {
+    color: #026b97;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 3px;
+}
+
+.bottom-right-add-group .right-cancel:hover {
+    color: #0088c2;
+    border: 1px solid #0088c2;
+}
+
+.border-blue{
+    border:1px solid blue !important;
+}
+.border-red {
+    border: 1px solid red !important;
+}
+.noti {
+    margin-top: 8px;
+    margin-left: 6px;
+    width: 18px;
+    height: 18px;
+    background-image: url(/Content/Images/exclamation.png);
+    background-repeat: no-repeat;
+    
+}
